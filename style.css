@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -7,7 +9,8 @@
 
 .navegacao{
     padding: 13px;
-    background-color: #18252d;
+    /*background-color: #18252d;*/
+    background-image: linear-gradient(to right, #1f3d51,#152027);
 }
 
 .menu{
@@ -15,19 +18,20 @@
     justify-content:space-between ; 
     gap: 45px; 
     text-transform: uppercase;
+    align-items: center;
 }
 
 .link{
     display: flex;
     justify-content: flex-end;
-    margin-top: 7px;
+    margin-right: 25px;
     gap: 45px;
 }
 
 .menu a{
     color: white;
     text-decoration: none;
-    font-family: 'Fraunces';
+    font-family: 'Montserrat';
 }
 
 .logo img{
@@ -41,7 +45,7 @@
 
 .menu a:hover{
     text-decoration: line-through;
-    color: rgb(141, 0, 0);
+    color: rgb(236, 0, 0);
 }
 
 .vidInicio{
@@ -54,6 +58,7 @@
     object-fit: cover;
     z-index: -1;
     position: absolute;
+    filter: brightness(65%);
 }
 
 .containerTitulo{
@@ -63,12 +68,68 @@
     /*text-align: center;*/
     justify-content: center;
     padding: 20px;
+    /*flex-direction: column;
+    align-items: center;*/
 }
 
 .containerTitulo img{
-    width: 400px;
-    margin-top: 20vh;
+    width: 450px;
+    margin-top: 15vh;
     
+}
+
+.subtitulo{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+}
+
+.subtitulo h1{
+    text-transform: uppercase;
+    margin: 30px;
+    /*font-family: 'Montserrat';*/
+    font:normal 25px 'Montserrat';
+    letter-spacing: 7px;
+}
+
+.subtitulo p{
+    font:normal 13px 'Montserrat';
+    width:30vw;
+}
+
+#gameplay{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    color: white;
+    background-color: #18252d;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 12px 20px;
+    transition-duration: 0.5s;
+}
+
+#play{
+    width: 18px;
+}
+
+#gameplay:hover{
+    color: #18252d;
+    background-color: white;
+}
+
+footer{
+    background-color: #18252d;
+    color: white;
+    margin: auto;
+    margin-top: 130px;
+    text-align: center;
+    padding: 30px;
+    font: normal 15px 'Montserrat';
+    background-image: linear-gradient(to right, #1f3d51,#152027);
 }
 
 
