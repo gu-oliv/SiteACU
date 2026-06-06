@@ -78,7 +78,6 @@
     
 }
 
-<<<<<<< HEAD
 .subtitulo{
     display: block;
     width: fit-content;
@@ -133,11 +132,10 @@ footer{
     background-image: linear-gradient(to right, #1f3d51,#152027);
 }
 
-=======
 body{
     background:#071722;
 }
->>>>>>> 17309b340de3ed0e39c41d91844b50376df14d18
+
 
 .layoutMaking{
     display:grid;
