@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: 'Fonte-Principal';
+    src: url('Fontes/TrajanPro-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -89,14 +96,14 @@
 .subtitulo h1{
     text-transform: uppercase;
     margin: 30px;
-    /*font-family: 'Montserrat';*/
-    font:normal 25px 'Montserrat';
-    letter-spacing: 7px;
+    font:normal 30px 'Fonte-Principal';
+    letter-spacing: 12px;
 }
 
 .subtitulo p{
     font:normal 13px 'Montserrat';
-    width:30vw;
+    margin: auto;
+    width: 50%;
 }
 
 #gameplay{
@@ -124,89 +131,23 @@
 footer{
     background-color: #18252d;
     color: white;
-    margin: auto;
-    margin-top: 130px;
+    margin-top: 50px;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     font: normal 15px 'Montserrat';
     background-image: linear-gradient(to right, #1f3d51,#152027);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rodape{
+    margin: auto;
+    width: 50%;
 }
 
 body{
     background:#071722;
-}
-
-
-.layoutMaking{
-    display:grid;
-    grid-template-columns:220px 2fr 1fr;
-    gap:20px;
-    padding:30px;
-}
-
-.menuLateral{
-    background:#18252d;
-    color:white;
-    padding:20px;
-    font-family:'Fraunces';
-}
-
-.menuLateral ul{
-    list-style:none;
-}
-
-.menuLateral li{
-    padding:12px 0;
-}
-
-.conteudoPrincipal{
-    background:#18252d;
-    color:white;
-    padding:25px;
-    font-family:'Fraunces';
-}
-
-.conteudoPrincipal h1{
-    margin:15px 0;
-    font-size:3rem;
-}
-
-.conteudoPrincipal p{
-    margin-bottom:15px;
-    line-height:1.7;
-}
-
-.conteudoPrincipal img{
-    width:100%;
-}
-
-.miniGaleria{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-    margin-top:15px;
-}
-
-.miniGaleria img{
-    width:100%;
-    height:80px;
-    object-fit:cover;
-}
-
-.painelDireito{
+    min-height:100vh;
     display:flex;
     flex-direction:column;
-    gap:20px;
-}
-
-.bloco{
-    background:#18252d;
-    color:white;
-    padding:15px;
-    font-family:'Fraunces';
-}
-
-.bloco img{
-    width:100%;
-    margin-top:10px;
 }
