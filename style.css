@@ -71,4 +71,80 @@
     
 }
 
+body{
+    background:#071722;
+}
 
+.layoutMaking{
+    display:grid;
+    grid-template-columns:220px 2fr 1fr;
+    gap:20px;
+    padding:30px;
+}
+
+.menuLateral{
+    background:#18252d;
+    color:white;
+    padding:20px;
+    font-family:'Fraunces';
+}
+
+.menuLateral ul{
+    list-style:none;
+}
+
+.menuLateral li{
+    padding:12px 0;
+}
+
+.conteudoPrincipal{
+    background:#18252d;
+    color:white;
+    padding:25px;
+    font-family:'Fraunces';
+}
+
+.conteudoPrincipal h1{
+    margin:15px 0;
+    font-size:3rem;
+}
+
+.conteudoPrincipal p{
+    margin-bottom:15px;
+    line-height:1.7;
+}
+
+.conteudoPrincipal img{
+    width:100%;
+}
+
+.miniGaleria{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.miniGaleria img{
+    width:100%;
+    height:80px;
+    object-fit:cover;
+}
+
+.painelDireito{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.bloco{
+    background:#18252d;
+    color:white;
+    padding:15px;
+    font-family:'Fraunces';
+}
+
+.bloco img{
+    width:100%;
+    margin-top:10px;
+}
