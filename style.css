@@ -186,6 +186,11 @@ body{
 .menuCapitulos li{
     margin-bottom:20px;
     padding-top: 26px;
+    transition-duration: 0.5s;
+}
+
+.menuCapitulos li:hover{
+    padding-left: 10px;
 }
 
 .menuCapitulos a{
@@ -213,8 +218,35 @@ body{
 
 .introducaoMaking h1{
     font-family:'Fonte-Principal';
-    font-size:55px;
+    font-size:50px;
+    padding: 20px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    border-right: 3px solid white;
+    animation:
+    digitando 5s steps(22, end), 
+    cursor .8s step-end infinite;
+
 }
+
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+    to{
+        width: 75%;
+    }
+}
+
+@keyframes cursor{
+    50%{
+        border-right-color: transparent;
+    }
+}
+
 
 .introducaoMaking h2{
     color:#d62d2d;
@@ -286,6 +318,11 @@ body{
     width:100%;
     height:220px;
     object-fit:cover;
+    transition-duration: 0.5s;
+}
+
+.gridGaleria img:hover{
+    transform: scale(1.1);
 }
 
 .estatisticasUnity{
