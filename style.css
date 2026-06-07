@@ -24,11 +24,7 @@
 .menu{
     display: flex;
     justify-content:space-between ; 
-<<<<<<< HEAD
-    gap: 30px; 
-=======
     gap: 23px; 
->>>>>>> 2d59cea796477fa3ebd90e25e0f5f4b7929d9c0f
     text-transform: uppercase;
     align-items: center;
 }
@@ -377,7 +373,7 @@ body{
 
     padding:25px;
 
-    color:white;
+    color:rgb(255, 255, 255);
 
     border:1px solid #24445b;
 }
@@ -388,17 +384,8 @@ body{
 }
 
 .videoCard{
-
+    
     margin-bottom:25px;
-}
-
-.videoCard img{
-
-    width:100%;
-
-    height:120px;
-
-    object-fit:cover;
 }
 
 .videoCard p{
