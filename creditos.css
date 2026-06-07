@@ -93,6 +93,7 @@ h2{
     width: 100%;
     margin-bottom: 20px;
     font: normal 30px 'Montserrat';
+    text-transform: uppercase;
 }
 
 .atuacoes{
@@ -116,5 +117,9 @@ h2{
     padding: 10px;
 }
 .desenvolvedores img{
-    width: 20px;
+    width: 30px;
+}
+
+#tecnologia{
+    width: 60px;
 }
