@@ -24,11 +24,7 @@
 .menu{
     display: flex;
     justify-content:space-between ; 
-<<<<<<< HEAD
-    gap: 30px; 
-=======
     gap: 23px; 
->>>>>>> 2d59cea796477fa3ebd90e25e0f5f4b7929d9c0f
     text-transform: uppercase;
     align-items: center;
 }

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Fonte-Principal';
+    src: url('Fontes/TrajanPro-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+.navegacao{
+    padding: 13px;
+    background-image: linear-gradient(to right, #1f3d51,#152027);
+}
+
+.menu{
+    display: flex;
+    justify-content:space-between ; 
+    gap: 23px; 
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    gap: 45px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.logo img{
+    width: 100px;
+    justify-content: flex-start;
+}
+
+#logoBranco{
+    width: 47px;
+}
+
+.menu a:hover{
+    text-decoration: line-through;
+    color: rgb(236, 0, 0);
+}
+
+body{
+    background-image: url('imgs/ChatGPT\ Image\ 6\ de\ jun.\ de\ 2026\,\ 23_07_43.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.desenvolvedores{
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font: normal 20px 'Montserrat';
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+h2{
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    font: normal 30px 'Montserrat';
+}
+
+.atuacoes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.atuacoes h3{
+    font: normal 20px 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
+}
+.membros{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.membros{
+    padding: 10px;
+}
+.desenvolvedores img{
+    width: 20px;
+}
