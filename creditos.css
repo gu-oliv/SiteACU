@@ -74,7 +74,7 @@ body{
 .desenvolvedores{
     display: flex;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     font: normal 20px 'Montserrat';
     padding: 50px;
@@ -82,19 +82,47 @@ body{
     justify-content: space-around;
     align-items: flex-start;
     gap: 50px;
+    margin: 20px;
 
     background-color: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    transition-duration: 0.5s;
+}
+.desenvolvedores:hover{
+     background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
 }
 
 h2{
     color: white;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 50px;
     font: normal 30px 'Montserrat';
     text-transform: uppercase;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+    animation:
+        digitando 4s steps(40, end) infinite;
+
 }
+
+@keyframes digitando{
+    from{
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
 
 .atuacoes{
     display: flex;
@@ -104,7 +132,7 @@ h2{
 }
 
 .atuacoes h3{
-    font: normal 20px 'Montserrat';
+    font: bold 20px 'Montserrat';
     text-transform: uppercase;
     text-align: center;
 }
@@ -122,4 +150,54 @@ h2{
 
 #tecnologia{
     width: 60px;
+}
+
+.desenvolvedores a{
+    color: white;
+    font: normal 18px 'Montserrat';
+}
+.desenvolvedores li{
+    padding: 20px;
+    padding-right: 25px;
+    transition-duration: 0.5s;
+}
+
+.desenvolvedores li:hover{
+    padding-left:5px;
+    color: red;
+}
+
+@media (max-width: 768px){
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .desenvolvedores{
+        flex-direction: column;
+        width: 85%;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .atuacoes{
+        width: 100%;
+    }
+
+    .membros{
+        flex-direction: column;
+        text-align: center;
+    }
 }
