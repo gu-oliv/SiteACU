@@ -227,11 +227,9 @@ body{
     border-right: 3px solid white;
     animation:
     digitando 5s steps(22, end), 
-    cursor .8s step-end infinite;
+    cursor .8s step-end infinite ;
 
 }
-
-
 
 @keyframes digitando{
     from{
@@ -247,7 +245,6 @@ body{
         border-right-color: transparent;
     }
 }
-
 
 .introducao h2{
     color:#d62d2d;
