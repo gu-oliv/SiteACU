@@ -9,12 +9,12 @@
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-main{
+main {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -22,56 +22,58 @@ main{
     margin: auto;
     flex-direction: column;
 }
-.navegacao{
+
+.navegacao {
     padding: 13px;
-    background-image: linear-gradient(to right, #1f3d51,#152027);
+    background-image: linear-gradient(to right, #1f3d51, #152027);
 }
 
-.menu{
+.menu {
     display: flex;
-    justify-content:space-between ; 
-    gap: 23px; 
+    justify-content: space-between;
+    gap: 23px;
     text-transform: uppercase;
     align-items: center;
 }
 
-.link{
+.link {
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
     gap: 45px;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat';
 }
 
-.logo img{
+.logo img {
     width: 100px;
     justify-content: flex-start;
 }
 
-#logoBranco{
+#logoBranco {
     width: 47px;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: line-through;
     color: rgb(236, 0, 0);
 }
 
-body{
-    background-image: url('imgs/ChatGPT\ Image\ 6\ de\ jun.\ de\ 2026\,\ 23_07_43.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+body {
+    background-image: url('imgs/imagem-de-fundo-CREDITOS.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-.desenvolvedores{
+
+.desenvolvedores {
     display: flex;
     border: 2px solid white;
     border-radius: 10px;
@@ -89,115 +91,112 @@ body{
     -webkit-backdrop-filter: blur(10px);
     transition-duration: 0.5s;
 }
-.desenvolvedores:hover{
-     background-color: rgba(255, 255, 255, 0.08);
+
+.desenvolvedores:hover {
+    background-color: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
 }
 
-h2{
+h2 {
     color: white;
     width: 100%;
     margin: 20px;
     font: normal 30px 'Montserrat';
     text-transform: uppercase;
-
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    
 
-    animation:
-        digitando 4s steps(40, end) infinite;
-
+    animation:digitando 4s steps(40, end) infinite;
 }
 
-@keyframes digitando{
-    from{
+@keyframes digitando {
+    from {
         clip-path: inset(0 100% 0 0);
     }
 
-    to{
+    to {
         clip-path: inset(0 0 0 0);
     }
 }
 
-
-
-.atuacoes{
+.atuacoes {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-direction: column;
 }
 
-.atuacoes h3{
+.atuacoes h3 {
     font: normal 20px 'Montserrat';
     text-transform: uppercase;
     text-align: center;
 }
-.membros{
+
+.membros {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.membros{
+
+.membros {
     padding: 10px;
 }
-.desenvolvedores img{
+
+.desenvolvedores img {
     width: 30px;
 }
 
-#tecnologia{
+#tecnologia {
     width: 60px;
 }
 
-.desenvolvedores a{
+.desenvolvedores a {
     color: white;
     font: normal 18px 'Montserrat';
 }
-.desenvolvedores li{
+
+.desenvolvedores li {
     padding: 20px;
     padding-right: 25px;
     transition-duration: 0.5s;
 }
 
-.desenvolvedores li:hover{
-    padding-left:5px;
+.desenvolvedores li:hover {
+    padding-left: 5px;
     color: red;
 }
 
-@media (max-width: 768px){
-
-    .menu{
+@media (max-width: 768px) {
+    .menu {
         flex-direction: column;
+        justify-content: center;
         gap: 15px;
     }
-
-    .link{
+    .link {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
-
-    h2{
+    h2 {
         text-align: center;
         font-size: 24px;
     }
-
-    .desenvolvedores{
+    .desenvolvedores {
         flex-direction: column;
         width: 85%;
         padding: 20px;
         gap: 30px;
     }
-
-    .atuacoes{
+    .atuacoes {
         width: 100%;
     }
-
-    .membros{
+    .membros {
         flex-direction: column;
         text-align: center;
+    }
+    ul{
+        padding: 10px;
     }
 }
